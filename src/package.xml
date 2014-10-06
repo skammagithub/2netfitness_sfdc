@@ -1,10 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Register_2net_User_Controller</members>
-        <members>SetAPIKeys</members>
-        <members>qualcomm2net</members>
+        <members>*</members>
         <name>ApexClass</name>
     </types>
-    <version>29.0</version>
+    <types>
+        <members>*</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ConnectedApp</name>
+    </types>
+    <types>
+        <members>Health</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>X2net_Dashboards</members>
+        <members>X2net_Dashboards/Leaderboard</members>
+        <members>X2net_Dashboards/My_Steps_Dashboard</members>
+        <name>Dashboard</name>
+    </types>
+    <types>
+        <members>X2Net</members>
+        <members>X2Net/X2net.jpeg</members>
+        <name>Document</name>
+    </types>
+    <types>
+        <members>Device__c-Device Layout</members>
+        <members>Device__c-Health Device Layout</members>
+        <members>Health__c-Health For Platform</members>
+        <members>Health__c-Health Layout</members>
+        <members>Integration_Key__c-Integration Key Layout</members>
+        <members>JWTToken__c-JWTToken Layout</members>
+        <members>Measurement__c-Measurement Layout</members>
+        <members>Measurement__c-Measurement for Platform</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Health Platform CRM</members>
+        <members>Health Profile</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Log_Workout</members>
+        <members>Weigh_In</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
+        <members>Heroku</members>
+        <members>twonetcom_qualcomm</members>
+        <name>RemoteSiteSetting</name>
+    </types>
+    <types>
+        <members>X2Net_Reports</members>
+        <members>X2Net_Reports/BMI_Category</members>
+        <members>X2Net_Reports/BMI_Category_Summary</members>
+        <members>X2Net_Reports/Miles_Leaderboard</members>
+        <members>X2Net_Reports/My_Steps</members>
+        <members>X2Net_Reports/Steps_Leaderboard</members>
+        <name>Report</name>
+    </types>
+    <version>31.0</version>
 </Package>

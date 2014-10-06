@@ -28,7 +28,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
 
-<apex:page standardController="Health__c" extensions="Register_2net_User_Controller">
+<apex:page standardController="Health__c" extensions="Register_2net_User_Controller" sidebar="false">
  <apex:pageMessages />
 
 <apex:form >

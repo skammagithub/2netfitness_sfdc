@@ -46,13 +46,18 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
     <description>This is a generic template for Custom Object.  With this template, you may adjust the default elements and values and add new elements and values.</description>
     <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
-    <enableReports>false</enableReports>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>Calories__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Calories</label>
         <precision>4</precision>
@@ -64,6 +69,7 @@
     </fields>
     <fields>
         <fullName>Date_Time__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Date Time</label>
         <required>false</required>
@@ -72,6 +78,7 @@
     </fields>
     <fields>
         <fullName>Debug_Measurement__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Debug Measurement</label>
         <length>32768</length>
@@ -80,7 +87,32 @@
         <visibleLines>3</visibleLines>
     </fields>
     <fields>
+        <fullName>Device_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Device__r.Type__c</formula>
+        <label>Device Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Device__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Device</label>
+        <referenceTo>Device__c</referenceTo>
+        <relationshipLabel>Measurements</relationshipLabel>
+        <relationshipName>Measurements</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Distance__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Distance</label>
         <precision>18</precision>
@@ -92,6 +124,7 @@
     </fields>
     <fields>
         <fullName>Duration__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Duration</label>
         <precision>18</precision>
@@ -103,6 +136,7 @@
     </fields>
     <fields>
         <fullName>Glucose__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Glucose</label>
         <precision>3</precision>
@@ -113,7 +147,22 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Health__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Health</label>
+        <referenceTo>Health__c</referenceTo>
+        <relationshipLabel>Measurements</relationshipLabel>
+        <relationshipName>Measurements</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
         <fullName>Mets__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Mets</label>
         <precision>18</precision>
@@ -125,6 +174,7 @@
     </fields>
     <fields>
         <fullName>Pulse__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Pulse</label>
         <precision>3</precision>
@@ -136,6 +186,7 @@
     </fields>
     <fields>
         <fullName>Start_Time__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Start Time</label>
         <required>false</required>
@@ -144,6 +195,7 @@
     </fields>
     <fields>
         <fullName>Steps__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Steps</label>
         <precision>18</precision>
@@ -155,6 +207,7 @@
     </fields>
     <fields>
         <fullName>Type__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Type</label>
         <length>80</length>
@@ -166,27 +219,30 @@
     <fields>
         <fullName>Unique_Key__c</fullName>
         <caseSensitive>true</caseSensitive>
+        <deprecated>false</deprecated>
         <externalId>true</externalId>
         <label>Unique_Key</label>
         <length>255</length>
-        <required>true</required>
+        <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>true</unique>
     </fields>
     <fields>
         <fullName>Weight__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Weight</label>
-        <precision>18</precision>
+        <precision>13</precision>
         <required>false</required>
-        <scale>6</scale>
+        <scale>1</scale>
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
         <fullName>diastolic__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>diastolic</label>
         <precision>3</precision>
@@ -198,6 +254,7 @@
     </fields>
     <fields>
         <fullName>map__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>map</label>
         <precision>3</precision>
@@ -209,6 +266,7 @@
     </fields>
     <fields>
         <fullName>spo2__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Spo2</label>
         <precision>18</precision>
@@ -220,6 +278,7 @@
     </fields>
     <fields>
         <fullName>systolic__c</fullName>
+        <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>systolic</label>
         <precision>3</precision>
@@ -230,11 +289,26 @@
         <unique>false</unique>
     </fields>
     <label>Measurement</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Calories__c</columns>
+        <columns>Date_Time__c</columns>
+        <columns>Duration__c</columns>
+        <columns>Distance__c</columns>
+        <columns>Start_Time__c</columns>
+        <columns>Steps__c</columns>
+        <columns>Type__c</columns>
+        <columns>Weight__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
     <nameField>
+        <displayFormat>2Net-{0}</displayFormat>
         <label>Custom Object Label Name</label>
-        <type>Text</type>
+        <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Measurements</pluralLabel>
     <searchLayouts/>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Measurement__c.Date_Time__c</field>
+    </columns>
+    <columns>
+        <field>Measurement__c.Steps__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>My Steps</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Health__c$Measurement__c</reportType>
+    <rowLimit>99</rowLimit>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Measurement__c.Steps__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Measurement__c.Date_Time__c</dateColumn>
+        <interval>INTERVAL_LAST120</interval>
+    </timeFrameFilter>
+</Report>
